@@ -1,0 +1,15 @@
+degisken= 75
+degisken= 70
+degisken= 65
+degisken= 60
+degisken= 55
+degisken= 50
+degisken= 45
+degisken= 40
+degisken= 35
+degisken= 30
+degisken= 25
+degisken= 20
+degisken= 15
+degisken= 10
+degisken= 5
