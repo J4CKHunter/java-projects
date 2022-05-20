@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <top>
+
+        <HBox spacing="30" alignment="center" style="-fx-border-color: red; -fx-border-width: 5;-fx-border-style: dashed">
+            <Button text="ERDEM"></Button>
+            <Button text="NAYIN"></Button>
+            <Button text="180202050"></Button>
+        </HBox>
+
+    </top>
+
+    <center>
+
+        <Label alignment="center" text="erdem nayin 180202050" BorderPane.alignment="center"
+               style="-fx-border-color: red; -fx-border-width: 5;-fx-border-style: dashed"></Label>
+
+
+    </center>
+
+
+</BorderPane>

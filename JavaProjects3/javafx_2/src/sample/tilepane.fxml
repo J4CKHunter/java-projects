@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TilePane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          prefHeight="400.0" prefWidth="600.0">
+
+    <Button text="button 1"></Button>
+    <Button text="button 2"></Button>
+    <Button text="button 3"></Button>
+    <Button text="button 4"></Button>
+    <Button text="button 5"></Button>
+    <Button text="button 6"></Button>
+    <Button text="button 7"></Button>
+    <Button text="button 8"></Button>
+    <Button text="button 9"></Button>
+    <Button text="button 10"></Button>
+
+
+
+</TilePane>

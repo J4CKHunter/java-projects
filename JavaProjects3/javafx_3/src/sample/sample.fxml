@@ -1,0 +1,150 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import de.jensd.fx.glyphs.weathericons.WeatherIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.control.Accordion?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <Button text="JavaFX 3" GridPane.rowIndex="0" GridPane.columnIndex="0">
+
+        <font>
+            <Font size="30"></Font>
+        </font>
+
+        <graphic>
+            <FontAwesomeIconView glyphName="FOURSQUARE" size="25"></FontAwesomeIconView>
+        </graphic>
+
+    </Button>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="Erdem Nayın">
+        <font>
+            <Font size="30"></Font>
+        </font>
+
+        <graphic>
+            <FontAwesomeIconView glyphName="FOURSQUARE" size="25"></FontAwesomeIconView>
+        </graphic>
+
+    </Label>
+
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="1" text="Miata" selected="true">
+        <font>
+            <Font size="15"></Font>
+        </font>
+
+        <graphic>
+            <FontAwesomeIconView glyphName="FOURSQUARE" size="10"></FontAwesomeIconView>
+        </graphic>
+    </RadioButton>
+
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="2" text="C63 AMG"></RadioButton>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="3" text="NSX"></RadioButton>
+
+    <fx:define>
+        <ToggleGroup fx:id="arabalar"></ToggleGroup>
+        <ToggleGroup fx:id="parcalar"></ToggleGroup>
+    </fx:define>
+
+    <RadioButton GridPane.rowIndex="1" GridPane.columnIndex="1" text="R34" toggleGroup="$arabalar"></RadioButton>
+    <RadioButton GridPane.rowIndex="1" GridPane.columnIndex="2" text="R35" toggleGroup="$arabalar"></RadioButton>
+    <RadioButton GridPane.rowIndex="1" GridPane.columnIndex="3" text="Supra" toggleGroup="$arabalar" selected="true"></RadioButton>
+
+    <CheckBox text="Spoiler" GridPane.rowIndex="2" GridPane.columnIndex="1" indeterminate="true"></CheckBox>
+    <CheckBox text="Body Kit" GridPane.rowIndex="2" GridPane.columnIndex="2"></CheckBox>
+
+    <ToggleButton text="Tinted Windows" GridPane.rowIndex="3" GridPane.columnIndex="1"></ToggleButton>
+    <ToggleButton text="20 rims" GridPane.rowIndex="3" GridPane.columnIndex="2"></ToggleButton>
+
+    <ToggleButton text="Turbo" GridPane.rowIndex="4" GridPane.columnIndex="1" toggleGroup="$parcalar"></ToggleButton>
+    <ToggleButton text="Intake Kit" GridPane.rowIndex="4" GridPane.columnIndex="2" toggleGroup="$parcalar"></ToggleButton>
+
+    <TextField promptText="adinizi giriniz" GridPane.rowIndex="5" GridPane.columnIndex="1"></TextField>
+
+    <PasswordField promptText="sifrenizi giriniz" GridPane.rowIndex="5" GridPane.columnIndex="2"></PasswordField>
+
+    <ComboBox GridPane.rowIndex="6" GridPane.columnIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="100 HP"></String>
+                <String fx:value="200 HP"></String>
+                <String fx:value="250 HP"></String>
+                <String fx:value="300 HP"></String>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <ComboBox GridPane.rowIndex="7" GridPane.columnIndex="1" editable="true">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Istanbul"></String>
+                <String fx:value="Ankara"></String>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <ChoiceBox GridPane.rowIndex="8" GridPane.columnIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Leyla"></String>
+                <String fx:value="Mecnun"></String>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+
+    <Slider GridPane.rowIndex="9" GridPane.columnIndex="0" GridPane.columnSpan="4" min="0" max="100"></Slider>
+
+    <Slider GridPane.rowIndex="10" GridPane.columnIndex="0" GridPane.columnSpan="4" min="0" max="100" showTickLabels="true"></Slider>
+
+    <Slider GridPane.rowIndex="11" GridPane.columnIndex="0" GridPane.columnSpan="4" min="0" max="100" showTickMarks="true"></Slider>
+
+    <Slider GridPane.rowIndex="12" GridPane.columnIndex="0" GridPane.columnSpan="4" min="0" max="100" showTickMarks="true"
+            showTickLabels="true" minorTickCount="5" snapToTicks="true"></Slider>
+
+    <Spinner GridPane.rowIndex="13" GridPane.columnIndex="0" min="0" max="100" initialValue="50"></Spinner>
+    <Spinner GridPane.rowIndex="14" GridPane.columnIndex="0" min="0" max="100" editable="true"></Spinner>
+
+    <ColorPicker GridPane.rowIndex="15" GridPane.columnIndex="0"></ColorPicker>
+
+    <DatePicker GridPane.rowIndex="15" GridPane.columnIndex="1"></DatePicker>
+
+    <TitledPane text="Başlık" GridPane.rowIndex="16" GridPane.columnIndex="0">
+        <Label text="Başlıkla ilgili bilgi."></Label>
+    </TitledPane>
+
+    <Accordion GridPane.rowIndex="17" GridPane.columnIndex="0" GridPane.columnSpan="2" expandedPane="$pane2">
+        <panes>
+            <TitledPane text="Başlık1">
+                <Label text="Başlıkla ilgili bilgi 1."></Label>
+            </TitledPane>
+
+            <TitledPane fx:id="pane2" text="Başlık 2">
+                <Label text="Başlıkla ilgili bilgi 2."></Label>
+            </TitledPane>
+        </panes>
+    </Accordion>
+
+</GridPane>
